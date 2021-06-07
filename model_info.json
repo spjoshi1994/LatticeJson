@@ -1,4 +1,6 @@
-	{
+[{
+		"version": 0.2
+	},	{
 		"model_name": "Predictive Maintenance Certus-NX",
 		"git_url": "https://github.com/LatticeSemi/Predictive-Maintenance.git -b Certus-NX-Predictive-Maintenance",
 		"model_spec": {
@@ -223,4 +225,4 @@
                 }
             }
 		}
-	}
+	}]
