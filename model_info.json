@@ -2275,7 +2275,7 @@
 					"required": true
 				}
 			},
-			"Evaluate Model" : {
+			"Evaluate_Model" : {
 				"_comment": "optional",
 				"gpu_option" : false,
                 "metrics_option" : true,
