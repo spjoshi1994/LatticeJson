@@ -2234,7 +2234,7 @@
 					"required": false
 				}
 			},
-			"tensorboard": {
+			"evaluate_tflite": {
 				"_comment": "optional",
 				"command": {
 					"run_type": "tensorboard"
@@ -2275,7 +2275,7 @@
 					"required": true
 				}
 			},
-			"evaluate_tflite" : {
+			"tensorboard" : {
 				"gpu_option" : false,
                 "metrics_option" : true,
 
