@@ -2282,6 +2282,10 @@
 				"command": {
 					"run_type": "python3"
 				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
 				"execution_script": {
 					"name": "Execution Script",
 					"default": "src/map.py",
