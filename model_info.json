@@ -37,7 +37,7 @@
 			}
 		}
 	},
-	{
+    {
 		"model_name": "Predictive Maintenance Certus-NX",
 		"git_url": "https://github.com/LatticeSemi/Predictive-Maintenance.git -b Certus-NX-Predictive-Maintenance",
 		"model_spec": {
@@ -66,67 +66,77 @@
 				"dataset": {
 					"name": "Dataset Type",
 					"default": "signlang",
+					"info":"signlang only supported",
 					"type": "str",
 					"required": true
 				},
 				"train_data_path": {
 					"name": "Dataset Path",
 					"type": "dir",
+					"info":"Path to claasification dataset",
 					"sub_type": "dataset",
 					"required": true
 				},
 				"train_dir": {
 					"name": "Checkpoint Path",
 					"type": "dir",
+					"info":"Directory to save the checkpoints",
 					"sub_type": "checkpoint",
 					"required": true
 				},
                 "gray": {
 					"name": "gray",
 					"default": "True",
+					"info":"Train model on grayscale or BGR images",
 					"type": "str",
 					"required": true
 				},
 				"log_root": {
 					"name": "log directory",
 					"type": "dir",
+					"info":"root directory for logs",
 					"sub_type":"artefacts",
 					"required": true
 				},
 				"image_size": {
 					"name": "Image size",
 					"default": "64",
+					"info":"Training image size",
 					"type": "int",
 					"required": true
 				},
 				"maxsteps": {
 					"name": "Max Steps",
 					"default": "100000",
+					"info":"Max number of iterations for training",
 					"type": "int",
 					"required": true
 				},
 				"ckptinterval": {
 					"name": "Checkpoint Interval",
 					"default": "1000",
+					"info":"Number of iterations for saving checkpoint",
 					"type": "int",
 					"required": true
 				},
 				"num_gpus": {
 					"name": "Visible GPUs",
 					"default": "0",
+					"info":"Gpu to use for training",
 					"type": "int",
 					"required": true
 				},
 				"transfer_learning": {
 					"name": "Transfer Learning",
 					"type": "dropdown",
+					"info":"Pretrained model,keep the number of iterations greater than 100000 to finetune",
 					"required": false,
 					"options": {
 						"Lattice Github": "git_hub",
 						"Local": "local",
 						"From other Job": "other_job"
 					},
-					"url": "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/pre_trained_models/ecp5_mv1_sqdet_human_count.zip"
+					"url": "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/pre_trained_models/Certus_NX_predictive_maintenance.zip"
 				}
 			},
 			"tensorboard": {
@@ -217,21 +227,24 @@
 					"required": true
 				},
 				"workspace":{
-					"name": "workspace",
-					"type":"workspace"
-				},
-				"dataset_path": {
-					"name": "Sample images path",
-					"type": "dir",
-					"sub_type" : "dataset",
-					"required": true
-				},
-				"tflite_path": {
-					"name": "tflite file",
-					"type": "file",
-					"extensions":"tflite",
-					"required": true
-				}
+                    "name": "workspace",
+                    "info": "Select workspace with TF2.2 CPU",
+                    "type":"workspace"
+                },
+                "dataset_path": {
+                    "name": "Sample images path",
+                    "info": "Dataset in classification format",
+                    "type": "dir",
+                    "sub_type" : "dataset",
+                    "required": true
+                },
+                "tflite_path": {
+                    "name": "tflite file",
+                    "info": "Path to Tensorflow Lite model",
+                    "type": "file",
+                    "extensions":"tflite",
+                    "required": true
+                }
 			},
 			"output_c_array": {
 				"command": {
@@ -362,6 +375,22 @@
 						"From other Job": "other_job"
 					},
 					"url": "https://raw.githubusercontent.com/LatticeSemi/Model_Info/dev/pre_trained_models/CrosslinkNX-VnV-Human-Presence-Detection.zip"
+				},
+				"freeze_layers" : {
+					"name": "Freeze Layers",
+					"type": "checkboxes",
+					"options": {
+						"fire1": "fire1",
+						"fire2": "fire2",
+						"fire3": "fire3",
+						"fire4": "fire4",
+						"fire5": "fire5",
+						"fire6": "fire6",
+						"fire7": "fire7",
+						"conv12": "conv12"
+					},
+					"default": "",
+					"required": false
 				}
 			},
 			"tensorboard": {
@@ -606,6 +635,29 @@
 					"name": "Tensorboard Port",
 					"default": "6006",
 					"type": "int",
+					"required": true
+				}
+			},
+			"Inference": {
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "/qvga_inference/qvga_inference_320x240.py",
+					"type": "file",
+					"required": true
+				},
+
+				"pb": {
+					"name": "Protobuf file for inference",
+					"type": "str",
+					"sub_type": "artefacts",
+					"selector": "training.train_dir",
 					"required": true
 				}
 			}
@@ -2278,7 +2330,7 @@
 			"map_calculation" : {
 				"gpu_option" : false,
                 "metrics_option" : true,
-
+        		"_comment": "optional",
 				"command": {
 					"run_type": "python3"
 				},
