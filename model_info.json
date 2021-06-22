@@ -2275,7 +2275,7 @@
 					"required": true
 				}
 			},
-			"Evaluate_Model" : {
+			"evaluate_tflite" : {
 				"_comment": "optional",
 				"gpu_option" : false,
                 "metrics_option" : true,
