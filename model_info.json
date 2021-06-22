@@ -2292,10 +2292,6 @@
 					"type": "file",
 					"required": true
 				},
-				"Model Matrices": {
-					"mAP": "mAP = (\\d+.\\d+)%"
-
-				},
 				"pb": {
 					"name": "Tensorflow Model File",
 					"type": "file",
