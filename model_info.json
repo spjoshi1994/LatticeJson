@@ -1049,6 +1049,62 @@
 					"type": "flag",
 					"required": true
 				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
+					"required": true
+				}
 			}
 		},
 		"SensAI": {
@@ -1906,6 +1962,62 @@
 					"type": "flag",
 					"required": true
 				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
+					"required": true
+				}
 			}
 		},
 		"SensAI": {
@@ -2055,12 +2167,16 @@
 					"required": true
 				}
 			},
-			"map_calculation" : {
+			"evaluate_tflite" : {
+				"_comment": "optional",
 				"gpu_option" : false,
                 "metrics_option" : true,
-
 				"command": {
 					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
 				},
 				"execution_script": {
 					"name": "Execution Script",
@@ -2073,10 +2189,6 @@
 					"type": "file",
 					"extenstions": "pb",
 					"required": true
-				},
-				"Model Matrices": {
-					"mAP": "mAP = (\\d+.\\d+)%"
-
 				},
 				"dataset_path": {
 					"name": "Dataset Path",
@@ -2093,7 +2205,7 @@
 				},
 				"output_node": {
 					"name": "Output Node",
-					"default": "conv12/bias_add:0",
+					"default": "conv12/convolution:0",
 					"type": "str",
 					"required": true
 				},
@@ -2106,7 +2218,7 @@
 
 				"channels":{
 					"name":" Number of channels",
-					"default": "3",
+					"default": "1",
 					"type": "int",
 					"required": true
 				}
@@ -2493,6 +2605,62 @@
 					"type": "flag",
 					"required": true
 				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
+					"required": true
+				}
 			}
 		},
 		"SensAI": {
@@ -2654,6 +2822,62 @@
 				"freeze": {
 					"default": "",
 					"type": "flag",
+					"required": true
+				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
 					"required": true
 				}
 			}
@@ -2818,6 +3042,62 @@
 					"type": "flag",
 					"required": true
 				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
+					"required": true
+				}
 			}
 		},
 		"SensAI": {
@@ -2980,6 +3260,62 @@
 				"freeze": {
 					"default": "",
 					"type": "flag",
+					"required": true
+				}
+			},
+			"evaluate_tflite" : {
+				"_comment": "optional",
+				"gpu_option" : false,
+                "metrics_option" : true,
+				"command": {
+					"run_type": "python3"
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "src/map.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "Tensorflow Model File",
+					"type": "file",
+					"extenstions": "pb",
+					"required": true
+				},
+				"dataset_path": {
+					"name": "Dataset Path",
+					"type": "dir",
+					"sub_type": "dataset",
+					"required": true
+				},
+
+				"input_node": {
+					"name": "Input Node",
+					"default": "batch:0",
+					"type": "str",
+					"required": true
+				},
+				"output_node": {
+					"name": "Output Node",
+					"default": "conv12/convolution:0",
+					"type": "str",
+					"required": true
+				},
+				"test_set": {
+					"name": "Set Type: test/val",
+					"default": "val",
+					"type": "str",
+					"required": true
+				},
+
+				"channels":{
+					"name":" Number of channels",
+					"default": "1",
+					"type": "int",
 					"required": true
 				}
 			}
