@@ -626,42 +626,24 @@
 					"type": "file",
 					"required": true
 				},
-				"pb": {
+				"h5": {
 					"name": "Tensorflow Model File",
 					"type": "file",
 					"extenstions": "h5",
 					"required": true
 				},
-				"dataset_path": {
-					"name": "Dataset Path",
+				"input_images": {
+					"name": "Path to input images",
 					"type": "dir",
-					"sub_type": "dataset",
+					"sub_type": "artefacts",
+					"selector": "training.train_dir",					
 					"required": true
 				},
-
-				"input_node": {
-					"name": "Input Node",
-					"default": "batch:0",
-					"type": "str",
-					"required": true
-				},
-				"output_node": {
-					"name": "Output Node",
-					"default": "conv12/convolution:0",
-					"type": "str",
-					"required": true
-				},
-				"test_set": {
-					"name": "Set Type: test/val",
-					"default": "val",
-					"type": "str",
-					"required": true
-				},
-
-				"channels":{
-					"name":" Number of channels",
-					"default": "1",
-					"type": "int",
+				"ground_truth": {
+					"name": "Path to gt folder",
+					"type": "dir",
+					"sub_type": "artefacts",
+					"selector": "training.train_dir",					
 					"required": true
 				}
 			}
