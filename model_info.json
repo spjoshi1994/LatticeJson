@@ -2313,6 +2313,29 @@
 					"required": true
 				}
 			},
+			"inference": {
+				"_comment": "optional",
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "/qvga_inference/genpb.py",
+					"type": "file",
+					"required": true
+				},
+				"pb": {
+					"name": "TensorFlow Model Path(.pb)",
+					"type": "dir",
+					"sub_type": "artefacts",
+					"required": true
+				},
+				"input_path": {
+					"type": "dataset",
+					"type": "flag",
+					"required": true
+				}
+			},
 			"map_calculation" : {
 				"gpu_option" : false,
                 "metrics_option" : true,
