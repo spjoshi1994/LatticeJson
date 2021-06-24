@@ -2324,6 +2324,10 @@
 					"type": "file",
 					"required": true
 				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
 				"pb": {
 					"name": "TensorFlow Model Path(.pb)",
 					"type": "dir",
