@@ -2313,14 +2313,14 @@
 					"required": true
 				}
 			},
-			"inference": {
+			"Inference": {
 				"_comment": "optional",
 				"command": {
 					"run_type": "python3"
 				},
 				"execution_script": {
 					"name": "Execution Script",
-					"default": "/qvga_inference/genpb.py",
+					"default": "/qvga_inference/stream_inference.py",
 					"type": "file",
 					"required": true
 				},
