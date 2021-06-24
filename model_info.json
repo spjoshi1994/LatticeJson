@@ -609,6 +609,73 @@
 					"required": true
 				}
 			},
+			"Inference": {
+				"_comment": "optional",
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "/qvga_inference/stream_inference_qvga.py",
+					"type": "file",
+					"required": true
+				},
+				"workspace":{
+					"name": "workspace",
+					"type":"workspace"
+				},
+				"pb": {
+					"name": "TensorFlow Model Path(.pb)",
+					"type": "dir",
+					"sub_type": "artefacts",
+					"required": true
+				},
+				"input_path": {
+					"type": "dir",
+					"sub_type":"artefacts",
+					"required": true
+
+				},
+				"mode": {
+					"type": "str",
+					"default": "images",
+					"required": true
+				},
+				"output": {
+					"type": "dir",
+					"sub_type":"artefacts",
+					"required": true
+				},
+				"url": {
+					"type": "str",
+					"default": "",
+					"required": true
+				},
+				"duration": {
+					"type": "str",
+					"default": "60",
+					"required": true
+				}
+
+			},
+			"freeze": {
+				"_comment": " Optional parameter: This determines that whether freeze part is available or not.",
+				"command": {
+					"run_type": "python3"
+				},
+				"execution_script": {
+					"name": "Execution Script",
+					"default": "map/keras2tf.py",
+					"type": "file",
+					"required": true
+				},
+				"keras_model": {
+					"name": "Select Model file (.h5)",
+					"type": "file",
+					"extenstions": "h5",
+					"required": true
+				}
+			},
 			"evaluate_tflite" : {
 				"_comment": "optional",
 				"gpu_option" : false,
@@ -2320,7 +2387,7 @@
 				},
 				"execution_script": {
 					"name": "Execution Script",
-					"default": "/qvga_inference/stream_inference.py",
+					"default": "/qvga_inference/stream_inference_qvga.py",
 					"type": "file",
 					"required": true
 				},
