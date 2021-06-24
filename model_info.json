@@ -608,44 +608,6 @@
 					"type": "int",
 					"required": true
 				}
-			},
-			"evaluate_tflite" : {
-				"_comment": "optional",
-				"gpu_option" : false,
-                "metrics_option" : true,
-				"command": {
-					"run_type": "python3"
-				},
-				"workspace":{
-					"name": "workspace",
-					"type":"workspace"
-				},
-				"execution_script": {
-					"name": "Execution Script",
-					"default": "map/map.py",
-					"type": "file",
-					"required": true
-				},
-				"h5": {
-					"name": "Tensorflow Model File",
-					"type": "file",
-					"extenstions": "h5",
-					"required": true
-				},
-				"input_images": {
-					"name": "Path to input images",
-					"type": "dir",
-					"sub_type": "artefacts",
-					"selector": "training.train_dir",					
-					"required": true
-				},
-				"ground_truth": {
-					"name": "Path to gt folder",
-					"type": "dir",
-					"sub_type": "artefacts",
-					"selector": "training.train_dir",					
-					"required": true
-				}
 			}
 		},
 
@@ -2309,29 +2271,6 @@
 				},
 				"freeze": {
 					"default": "",
-					"type": "flag",
-					"required": true
-				}
-			},
-			"inference": {
-				"_comment": "optional",
-				"command": {
-					"run_type": "python3"
-				},
-				"execution_script": {
-					"name": "Execution Script",
-					"default": "/qvga_inference/genpb.py",
-					"type": "file",
-					"required": true
-				},
-				"pb": {
-					"name": "TensorFlow Model Path(.pb)",
-					"type": "dir",
-					"sub_type": "artefacts",
-					"required": true
-				},
-				"input_path": {
-					"type": "dataset",
 					"type": "flag",
 					"required": true
 				}
