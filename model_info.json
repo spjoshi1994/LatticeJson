@@ -672,6 +672,7 @@
 				"keras_model": {
 					"name": "Select Model file (.h5)",
 					"type": "dir",
+					"sub_type": "artefacts",
 					"selector":"training.train_dir",
 					"required": true
 				}
