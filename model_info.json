@@ -672,6 +672,7 @@
 				"keras_model": {
 					"name": "Select Model file (.h5)",
 					"type": "file",
+					"selector":"training.train_dir",
 					"extenstions": "h5",
 					"required": true
 				}
