@@ -2381,7 +2381,7 @@
 					"required": true
 				}
 			},
-			"Inference": {
+			"inference": {
 				"_comment": "optional",
 				"command": {
 					"run_type": "python3"
