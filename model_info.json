@@ -609,7 +609,7 @@
 					"required": true
 				}
 			},
-			"Inference": {
+			"inference": {
 				"_comment": "optional",
 				"command": {
 					"run_type": "python3"
@@ -625,7 +625,7 @@
 					"type":"workspace"
 				},
 				"pb": {
-					"name": "TensorFlow Model Path(.pb)",
+					"name": "TensorFlow Model Path(.h5)",
 					"type": "dir",
 					"sub_type": "artefacts",
 					"required": true
@@ -2380,55 +2380,6 @@
 					"type": "flag",
 					"required": true
 				}
-			},
-			"inference": {
-				"_comment": "optional",
-				"command": {
-					"run_type": "python3"
-				},
-				"execution_script": {
-					"name": "Execution Script",
-					"default": "/qvga_inference/stream_inference_qvga.py",
-					"type": "file",
-					"required": true
-				},
-				"workspace":{
-					"name": "workspace",
-					"type":"workspace"
-				},
-				"pb": {
-					"name": "TensorFlow Model Path(.pb)",
-					"type": "dir",
-					"sub_type": "artefacts",
-					"required": true
-				},
-				"input_path": {
-					"type": "dir",
-					"sub_type":"artefacts",
-					"required": true
-
-				},
-				"mode": {
-					"type": "str",
-					"default": "images",
-					"required": true
-				},
-				"output": {
-					"type": "dir",
-					"sub_type":"artefacts",
-					"required": true
-				},
-				"url": {
-					"type": "str",
-					"default": "",
-					"required": true
-				},
-				"duration": {
-					"type": "str",
-					"default": "60",
-					"required": true
-				}
-
 			},
 			"map_calculation" : {
 				"gpu_option" : false,
