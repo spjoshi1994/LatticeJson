@@ -21,7 +21,7 @@
 			"image_url": "latticesemi/ml-training:tf-1.15.0"
 		},
 
-	"raw_images" : {
+	"other" : {
 		"kitti" : {
 			"command" : "python3 raw2kittivoc.py --dataset_dir /lattice/dataset/#datasetname/ --dataset_type kitti" ,
 			"image_url": "latticesemi/ubuntu:latest"
