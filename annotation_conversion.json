@@ -19,7 +19,8 @@
 		"tfrecord" : {
 			"command" : "python3 /scripts/tfrecord-gen.py -i /lattice/dataset/#datasetname -o temp && rm -rf /lattice/dataset/#datasetname/* && mv temp/* /lattice/dataset/#datasetname/",
 			"image_url": "latticesemi/ml-training:tf-1.15.0"
-		},
+		}
+	},
 
 	"other" : {
 		"kitti" : {
@@ -31,5 +32,5 @@
 			"image_url": "latticesemi/ubuntu:latest"
 		}
 	}
-	}
+	
 }
