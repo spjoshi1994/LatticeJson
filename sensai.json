@@ -1027,7 +1027,7 @@
                 },
                 "version":["v4.1","v5.0"]
             },
-			"Certus-Pro NX Compact":{
+			"Certus-Pro NX":{
                 "ip_mode":{
                     "name":"ip",
                     "type":"dropdown",
