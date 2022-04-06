@@ -6,7 +6,7 @@
             "v3.0":"latticesemi/sensai:v3.0",
             "v3.1":"latticesemi/sensai:v3.1",
             "v4.0":"latticesemi/sensai:v4.0",
-            "v4.1":"latticesemi/sensai:v4.1",     
+            "v4.1":"latticesemi/sensai:v4.1",
             "v5.0":"latticesemi/sensai:v5.0"
         },
         "default":"v5.0",
@@ -244,13 +244,8 @@
                 },
                 "default":"checked",
                 "version":["v5.0"]
-            }  
-            
-                
-            
-            
-            
-            },
+            } }
+            ,
             "ECP5":{
                 "mobilenet_mode":{
                     "name":"MobileNet Mode",
