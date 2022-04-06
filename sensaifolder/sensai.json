@@ -107,10 +107,10 @@
                 "ECP5":"ECP5",
                 "Ultra Plus":"Ultra Plus",
                 "CrossLink-NX":"CrossLink-NX",
-                "Certus-Pro NX":"Certus-Pro NX"
+                "Certus-Pro NX Optimized":"Certus-Pro NX"
             },
             "default":"CrossLink-NX",
-            "Certus-Pro NX":{
+            "Certus-Pro NX Optimized":{
                     "crosslink_scratch_pad_blk_size":{
                         "name":"Scratch Pad Memory Block Size",
                         "type":"dropdown",
