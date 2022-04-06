@@ -103,7 +103,7 @@
                 "Certus-Pro NX Optimized":"Certus-Pro NX"
             },
             "default":"Certus-Pro NX Optimized",
-            "Certus-Pro NX Optimized":{
+            "Certus-Pro NX":{
             "ip":{
                     "name":"ip",
                     "type":"str",
