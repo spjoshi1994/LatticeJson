@@ -107,10 +107,10 @@
                 "ECP5":"ECP5",
                 "Ultra Plus":"Ultra Plus",
                 "CrossLink-NX":"CrossLink-NX",
-                "Certus-Pro NX Optimized":"Certus-Pro NX"
+                "Certus-Pro NX":"Certus-Pro NX"
             },
             "default":"CrossLink-NX",
-            "Certus-Pro NX Optimized":{
+            "Certus-Pro NX":{
                 "ip":{
                     "name":"ip_mode",
                     "type":"str",
