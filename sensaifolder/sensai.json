@@ -114,7 +114,8 @@
                 "ip":{
                     "name":"ip_mode",
                     "type":"str",
-                    "default":"Optimized_CNN"
+                    "default":"Optimized_CNN",
+                    "version":["v5.0"]
                 },
                     "crosslink_scratch_pad_blk_size":{
                         "name":"Scratch Pad Memory Block Size",
