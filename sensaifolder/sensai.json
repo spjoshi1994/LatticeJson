@@ -111,6 +111,11 @@
             },
             "default":"CrossLink-NX",
             "Certus-Pro NX":{
+                "ip":{
+                    "name":"ip_mode",
+                    "type":"str",
+                    "default":"Optimized_CNN"
+                },
                     "crosslink_scratch_pad_blk_size":{
                         "name":"Scratch Pad Memory Block Size",
                         "type":"dropdown",
