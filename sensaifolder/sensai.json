@@ -105,9 +105,9 @@
             "type":"dropdown",
             "options":{
                 "ECP5":"ECP5",
-                "CrossLink-NX Optimized":"CrossLink-NX",
-                "Ultra Plus":"Ultra Plus",
                 "CrossLink-NX Compact":"CrossLink-NX",
+                "Ultra Plus":"Ultra Plus",
+                "CrossLink-NX Optimized":"CrossLink-NX",
                 "Certus-Pro NX Optimized":"Certus-Pro NX",
                 "Certus-Pro NX Extended":"Certus-Pro NX",
                 "Certus-Pro NX Compact":"Certus-Pro NX"
