@@ -108,9 +108,9 @@
                 "CrossLink-NX Compact Network":"CrossLink-NX",
                 "Ultra Plus":"Ultra Plus",
                 "CrossLink-NX Optimized":"CrossLink-NX",
-                "Certus-Pro NX Optimized":"Certus-Pro NX",
-                "Certus-Pro NX Extended":"Certus-Pro NX",
-                "Certus-Pro NX Compact":"Certus-Pro NX"
+                "Certus-Pro NX Optimized":"CrossLink-NX",
+                "Certus-Pro NX Extended":"CrossLink-NX",
+                "Certus-Pro NX Compact":"CrossLink-NX"
             },
             "default":"Certus-Pro NX Extended",
             "Certus-Pro NX Extended":{
