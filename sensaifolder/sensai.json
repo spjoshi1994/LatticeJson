@@ -752,7 +752,7 @@
                 "ip":{
                         "name":"ip_mode",
                         "type":"str",
-                        "default":"Optimized_CNN",
+                        "default":"Compact_CNN",
                         "version":["v5.0"]
                         },
                 "conv1x1_mode":{
