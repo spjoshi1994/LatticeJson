@@ -112,7 +112,7 @@
                 "Certus-Pro NX Extended":"Certus-Pro NX",
                 "Certus-Pro NX Compact":"Certus-Pro NX"
             },
-            "default":"CrossLink-NX",
+            "default":"CrossLink-NX Compact",
             "Certus-Pro NX Extended":{
                     "ip":{
                     "name":"ip_mode",
