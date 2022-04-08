@@ -105,7 +105,7 @@
             "type":"dropdown",
             "options":{
                 "ECP5":"ECP5",
-                "CrossLink-NX Compact":"CrossLink-NX",
+                "CrossLink-NX Compact Network":"CrossLink-NX",
                 "Ultra Plus":"Ultra Plus",
                 "CrossLink-NX Optimized":"CrossLink-NX",
                 "Certus-Pro NX Optimized":"Certus-Pro NX",
@@ -748,11 +748,11 @@
                     "version":["v3.0","v3.1","v4.0","v4.1","v5.0"]
                 }
             },
-            "Crosslink-NX Compact":{
+            "Crosslink-NX Compact Network":{
                 "ip":{
                     "name":"ip_mode",
                     "type":"str",
-                    "default":"Optimized_CNN",
+                    "default":"Compact_CNN",
                     "version":["v5.0"]
                     },
                 "crosslink_scratch_pad_blk_size":{
