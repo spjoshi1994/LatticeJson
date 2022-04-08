@@ -748,7 +748,7 @@
                     "version":["v3.0","v3.1","v4.0","v4.1","v5.0"]
                 }
             },
-            "Crosslink-NX Compact Network":{
+            "Crosslink-NX Compact":{
                 "ip":{
                     "name":"ip_mode",
                     "type":"str",
