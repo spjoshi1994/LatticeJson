@@ -750,7 +750,7 @@
                     "version":["v3.1","v4.0","v4.1","v5.0"]
                 }
             },
-            "CrossLink-NX Optimized":{
+            "CrossLink NX Optimized":{
                 "ip":{
                     "name":"ip_mode",
                     "type":"str",
