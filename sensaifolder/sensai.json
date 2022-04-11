@@ -127,7 +127,8 @@
                             "4096":"4096",
                             "8192":"8192"
                         },
-                        "default":"4096"
+                        "default":"4096",
+                        "version":["v5.0"]
                     },
                     "crosslink_scratch_pad_blk_size":{
                         "name":"Scratch Pad Memory Block Size",
@@ -159,7 +160,8 @@
                             "131072":"131072",
                             "262144":"262144"
                         },
-                        "default":"131072"
+                        "default":"131072",
+                        "version":["v5.0"]
                     },
                     "cross_link_external_mem_size":{
                         "name":"External memory interfaced",
@@ -236,8 +238,7 @@
                         },
                         "default":"checked",
                         "version":["v5.0"]
-                    },
-                    "version": ["v5.0"]
+                    }
                 },
             "Certus-Pro NX Compact":{
                     "ip":{
