@@ -1,6 +1,6 @@
 [{
 	"name": "Tensorflow 1.14.0",
-	"url": "latticesemi/ml-training:tf-1.14.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-1.14.0",
 	"default": true,
 	"description": "Tensorflow 1.14.0",
 	"framework": "TensorFlow",
@@ -22,7 +22,7 @@
 },
 {
 	"name": "Tensorflow 1.15.0",
-	"url": "latticesemi/ml-training:tf-1.15.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-1.15.0",
 	"default": true,
 	"description": "Tensorflow 1.15.0",
 	"framework": "TensorFlow",
@@ -38,7 +38,7 @@
 
 {
 	"name": "Tensorflow 2.3.0",
-	"url": "latticesemi/ml-training:tf-2.3.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-2.3.0",
 	"default": true,
 	"description": "Tensorflow 2.3.0",
 	"framework": "TensorFlow",
@@ -55,7 +55,7 @@
 
 {
 	"name": "Tensorflow 2.0.0",
-	"url": "latticesemi/ml-training:tf-2.0.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-2.0.0",
 	"default": false,
 	"description": "Tensorflow 2.0.0",
 	"framework": "TensorFlow",
@@ -78,7 +78,7 @@
 },
 {
 	"name": "Tensorflow 2.1.0",
-	"url": "latticesemi/ml-training:tf-2.1.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-2.1.0",
 	"default": false,
 	"description": "Tensorflow 2.1.0",
 	"framework": "TensorFlow",
@@ -101,7 +101,7 @@
 },
 {
 	"name": "Tensorflow 2.2.0-cpu",
-	"url": "latticesemi/ml-training:tf-2.2.0-cpu",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-2.2.0-cpu",
 	"default": false,
 	"description": "Tensorflow 2.2.0-cpu",
 	"framework": "TensorFlow",
@@ -114,7 +114,7 @@
  },
 {
 	"name": "Tensorflow 2.2.0",
-	"url": "latticesemi/ml-training:tf-2.2.0",
+	"url": "ghcr.io/softnauticsltf/ml-training:tf-2.2.0",
 	"default": false,
 	"description": "Tensorflow 2.2.0",
 	"framework": "TensorFlow",
