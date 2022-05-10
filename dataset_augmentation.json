@@ -1,5 +1,5 @@
 {
-	"image_url": "latticesemi/ubuntu:latest",
+	"image_url": "ghcr.io/softnauticsltf/ubuntu:latest",
 	"command" : "python3 /scripts/dataset_augmentation.py --input /lattice/dataset/#datasetname/ --output /lattice/dataset/#datasetname/augment/",
 	"output_dimension" : {
 		"name": "Output Dimension",
